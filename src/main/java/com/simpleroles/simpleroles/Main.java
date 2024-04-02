@@ -1,9 +1,6 @@
 package com.simpleroles.simpleroles;
 
-import com.simpleroles.simpleroles.Commands.RoleAssign;
-import com.simpleroles.simpleroles.Commands.RoleCreate;
-import com.simpleroles.simpleroles.Commands.RoleDelete;
-import com.simpleroles.simpleroles.Commands.RoleRemove;
+import com.simpleroles.simpleroles.Commands.*;
 import com.simpleroles.simpleroles.Listeners.MenuHandler;
 import com.simpleroles.simpleroles.Listeners.PlayerJoin;
 import com.simpleroles.simpleroles.sql.MySQL;
@@ -43,6 +40,7 @@ public final class Main extends JavaPlugin {
         getCommand("roledelete").setExecutor(new RoleDelete());
         getCommand("roleassign").setExecutor(new RoleAssign());
         getCommand("roleremove").setExecutor(new RoleRemove());
+        getCommand("rolelist").setExecutor(new RoleList());
     }
 
     @Override

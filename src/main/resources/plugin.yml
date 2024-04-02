@@ -15,3 +15,6 @@ commands:
   roleremove:
     description: Remove a role from a player
     usage: /<command> <player>
+  rolelist:
+    description: List all roles
+    usage: /<command>

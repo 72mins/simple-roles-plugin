@@ -5,6 +5,8 @@ import org.bukkit.entity.Player;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class QueryManager {
     private static MySQL sql = Main.getSQL();
@@ -126,5 +128,23 @@ public class QueryManager {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public static String[] listRoles() {
+        List<String> roles = new ArrayList<>();
+
+        String query = "SELECT name FROM roles;";
+
+        try {
+            ResultSet resultSet = sql.getConnection().createStatement().executeQuery(query);
+
+            while (resultSet.next()) {
+                roles.add(resultSet.getString("name"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return roles.toArray(new String[0]);
     }
 }
