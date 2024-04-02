@@ -1,0 +1,17 @@
+*.classpath
+*.project
+*.settings/
+.idea/*
+*.iml
+.DS_Store
+
+!.idea/checkstyle-idea.xml
+
+.gradle/
+/jars/
+out/
+build/
+target/
+*.class
+
+/run/
