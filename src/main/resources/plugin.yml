@@ -1,0 +1,17 @@
+name: simple-roles
+version: '${project.version}'
+main: com.simpleroles.simpleroles.Main
+api-version: '1.20'
+commands:
+  rolecreate:
+    description: Create a new role
+    usage: /<command> <role name>
+  roledelete:
+    description: Delete a role
+    usage: /<command> <role name>
+  roleassign:
+    description: Assign a role to a player
+    usage: /<command> <player> <role>
+  roleremove:
+    description: Remove a role from a player
+    usage: /<command> <player>
