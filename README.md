@@ -22,3 +22,4 @@ The plugin automatically creates the necessary tables in the database.
 - `/roledelete <role>`: Delete a role.
 - `/roleassign <player> <role>`: Assign a role to a player.
 - `/roleremove <player> <role>`: Remove a role from a player.
+- `/rolelist`: List all available roles.
